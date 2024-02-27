@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
 			Fullname: Joi.string().max(255).required(),
 			Registerpasswords: Joi.string().max(255).required(),
 			select: Joi.string().max(255).required(),
-			phone: Joi.any().required(),
+			phone: Joi.string().max(255).required(),
 			Registeremail: Joi.string().max(255).required(),
 
 			doctor: Joi.object({
