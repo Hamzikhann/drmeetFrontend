@@ -10,7 +10,7 @@ class AppConfig {
 		this.app = app;
 	}
 	includeConfig() {
-		global.crypto = require("../utils/crypto");
+		// global.crypto = require("../utils/crypto");
 
 		this.app.use(cors());
 		this.app.use(bodyParser.json({ limit: "10mb" }));
